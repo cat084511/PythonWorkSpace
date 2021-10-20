@@ -8,6 +8,6 @@ while True:
         break
     else:
         print(x,"は、知りませんでした。覚えておきます。")
-        fruits.append(x)
+        fruits+=[x]
 print('知っている果物')
 print(fruits)
