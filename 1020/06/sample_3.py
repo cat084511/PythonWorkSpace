@@ -1,9 +1,6 @@
 # 初期化
 marks = ('S','H','C','D') # 4 種類のマーク
-cards = [] # デッキ用リスト
-for m in marks:
-    for i in range(13):
-        cards.append([m,i+1])
+cards = [[m,i+1] for m in marks for i in range(13)] #デッキ用リスト
 print('-'*10)
 print(cards)
 print('-'*10)
