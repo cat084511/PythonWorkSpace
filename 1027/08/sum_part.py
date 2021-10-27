@@ -1,0 +1,5 @@
+print("数字１：",end="")
+a = int(input())
+print("数字１：",end="")
+b = int(input())
+print(a,"から",b,"までの合計は",int(-1*((a+b)*(a-b-1)/2)))
