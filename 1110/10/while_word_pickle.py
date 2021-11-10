@@ -1,6 +1,5 @@
 import pickle
 import os
-
 words=[]
 i = "@"
 if os.path.getsize("word.pkl") > 0: 
