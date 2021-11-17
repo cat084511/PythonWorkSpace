@@ -1,4 +1,4 @@
-import collections,re
-with open("word_list.txt","r",encoding="utf-8") as f:
+import collections
+with open("word_list.txt","r") as f:
     for i,v in sorted(dict(collections.Counter(f.read().splitlines())).items()):
         print (i," :",v)
