@@ -1,4 +1,4 @@
 import collections,re
-with open("word_list.txt","r",encoding="utf-8") as f:
-    for i,v in dict(collections.Counter(re.split('[ ,.()\n"]',f.read().lower()))).items():
+with open("sentence.txt","r",encoding="utf-8") as f:
+    for i,v in sorted(dict(collections.Counter(re.split('[ ,.()\n":]',f.read().lower()))).items())[1:]:
         print(i," :",v)
