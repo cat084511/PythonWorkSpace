@@ -1,10 +1,5 @@
 def out_csvdata(**kwargs):
-    for a in ["B","L","D"]:
-        if a not in kwargs:
-            kwargs[str(a)]="-"
-    print([kwargs['B'],kwargs['L'],kwargs['D']])
-
-
+    print([kwargs[x] if x in kwargs else "-" for x in ["B","L","D"]])
 
 # main
 eat = {}
