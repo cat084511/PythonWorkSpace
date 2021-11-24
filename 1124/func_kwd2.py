@@ -1,19 +1,24 @@
-i = 1
-val = 1
-l = []
-flg = 0
-while 1:
-    print("商品名を入力してください（0:終了）：",end="")
-    i=input()
-    if i=="0":
+def check_shopping(**kwargs):
+    return 100<min(kwargs.values())
+
+# main
+dic_order = {}
+while True:
+    product_name = input('商品名を入力してください（0:終了）：')
+    if product_name == '0':
         break
-    print("金額を入力してください（0:終了）：",end="")
-    val=input()
-    if val=="0":
+    product_price = input('金額を入力してください（0:終了）：')
+    if product_price == '0':
         break
-    elif int(val)<100:
-        flg=1
-    l.append([i,val])
-print("最低価格を下回った商品があります。" if flg else "全てのデータは問題ありませんでした" )
-for k,v in l:
-    print(f"{k} : {v}")
+    elif product_price.isnumeric():
+        product_price = int(product_price)
+    else:
+        print("数値以外が入力されました")
+        continue
+    dic_order[product_name] = product_price
+if check_shopping(**dic_order):
+    print('\n 全てのデータは問題ありませんでした') 
+else:
+    print('\n 最低価格を下回った商品があります。') 
+for key, value in dic_order.items():
+    print(f'{key} : {value}')

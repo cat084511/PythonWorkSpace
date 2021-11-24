@@ -10,7 +10,7 @@ def do_anything(*args):
     elif len(args)==2:
         if not(isinstance(args[0],(str,int)) or isinstance(args[1],(str,int))):
             print("無茶言わないで！")
-        elif type(args[0])==type(args[1]) and type(args[0]):
+        elif type(args[0])==type(args[1]):
             print(args[0]+args[1])
         else:
             print("できません〜")
