@@ -7,7 +7,6 @@ def func2():
     
 # main
 run_list = {'a': func1, 'b': func2}
-while 1:
-    print("a=>Hello,b=>Goodbye")
-    a = input("どちらを実行しますか？:")
-    if a in run_list:run_list[a]()
+
+while a:=input("a=>Hello,b=>Goodbye\nどちらを実行しますか？:"):
+    run_list[a]() if a in run_list else print("どちらかを入力して下さい")

@@ -5,7 +5,5 @@ def even():
 def choice_func(number):
     return odd if int(number)%2 else even
 # main
-while True:
-    num = input("数字を入力してください。（0：終了）")
-    if num=="0":break
-    choice_func(num)()
+while (num:=input("数字を入力してください。（0：終了）"))!="0":
+    print("入力が正しくありません") if num.isdecimal() else choice_func(num)()
