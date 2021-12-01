@@ -9,9 +9,7 @@ while i!="":
         print("単語リスト : ",words)
     elif i not in words:
         words.append(i)
-    else:
-        print("すでに登録済です")
+    else:print("すでに登録済です")
 print("これまでに覚えた単語 : ",words)
 with open("word.txt","w") as f:
-    for a in words:a
-        f.write(a+",")
+    for a in words:f.write(a+",")

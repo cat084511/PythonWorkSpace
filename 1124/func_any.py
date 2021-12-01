@@ -5,8 +5,7 @@ def out_csvdata(**kwargs):
 eat = {}
 while True:
     menu = input('朝食(B) 昼食(L) 夕食(D)と食べたものを入力してください：')
-    if menu == '':
-        break
+    if menu == '':break
     token, menu = menu.split(',')
     if token in ['B', 'L', 'D']:
         eat[token] = menu
