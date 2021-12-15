@@ -1,8 +1,9 @@
 import datetime
 def log_file(func):
     def funcname(*args,**kwargs):
-        out = f"{datetime.datetime.now()} {(a:=str(func).split())[0][1:]}:{a[1]} args:{str(args)} kwargs:{str(kwargs)}\n"
+        out = f"{datetime.datetime.now()} function:{func.__name__} args:{str(args)} kwargs:{str(kwargs)}\n"
         with open("python.log","a") as f: f.write(out)
+        func(*args,**kwargs)
     return funcname
 # main
 @log_file

@@ -1,3 +1,3 @@
 import sys
-print(f"引数：{sys.argv}")
-for a in sys.argv[1:]:[print(f"{l:04}:{v.splitlines()[0]}") for l,v in enumerate(open(a,'r'),1)]
+print(f"引数：{(v:=sys.argv)}")
+[print(f"--{a}--")or[print(f"{l:04}:{z.splitlines()[0]}") for l,z in enumerate(open(a,'r'),1)] for a in v[1:]]

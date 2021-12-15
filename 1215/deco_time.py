@@ -2,7 +2,7 @@ import time
 def run_time(func):
     def funcname(*args,**kwargs):
         st = time.time()
-        r = func(*args,**kwargs)
+        func(*args,**kwargs)
         print(f"実行関数:{str(func).split()[1]} 実行時間:{time.time()-st}")
     return funcname
 
