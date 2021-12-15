@@ -1,0 +1,12 @@
+2021-12-15 11:45:50.329970 function:test args:(100,) kwargs:{}
+2021-12-15 11:45:50.330953 function:test args:(0,) kwargs:{}
+2021-12-15 11:45:50.330953 function:test args:(1,) kwargs:{}
+2021-12-15 11:45:50.330953 function:test args:(2,) kwargs:{}
+2021-12-15 11:45:50.331954 function:test args:(3,) kwargs:{}
+2021-12-15 11:45:50.331954 function:test args:(4,) kwargs:{}
+2021-12-15 11:46:04.752686 function:test args:(100,) kwargs:{}
+2021-12-15 11:46:04.752686 function:test args:(0,) kwargs:{}
+2021-12-15 11:46:04.753688 function:test args:(1,) kwargs:{}
+2021-12-15 11:46:04.753688 function:test args:(2,) kwargs:{}
+2021-12-15 11:46:04.754689 function:test args:(3,) kwargs:{}
+2021-12-15 11:46:04.754689 function:test args:(4,) kwargs:{}
